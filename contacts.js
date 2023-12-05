@@ -48,7 +48,6 @@ async function removeContact(contactId) {
       );
       await fs.writeFile(contactsPath, JSON.stringify(newList));
       console.table(deletedContact);
-      console.table(newList);
       return deletedContact;
     }
     console.table(null);
